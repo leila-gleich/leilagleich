@@ -3,7 +3,7 @@ class CreateResponsibilities < ActiveRecord::Migration[5.0]
     create_table :responsibilities do |t|
       t.string :name
       t.references :position
-
+      t.references :skill
       t.timestamps
     end
   end
