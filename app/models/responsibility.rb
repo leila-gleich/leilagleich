@@ -1,4 +1,4 @@
 class Responsibility < ApplicationRecord
-  belongs_to :position
-  belongs_to :skill
+  belongs_to :position, optional: true
+  belongs_to :skill, optional: true
 end
