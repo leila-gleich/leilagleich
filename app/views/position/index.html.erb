@@ -1,0 +1,13 @@
+<h1 class="page-header">Leila's Professional Experience</h1>
+
+<section class="main">
+  <div class="resume">
+    <%@positions.each do |position|%>
+    <h3><%=position.name%></h3>
+      <%position.responsibilities.each do |responsibility|%>
+        <li><%=responsibility.name%></li>
+      <%end%>
+    <%end%>
+  </div>
+
+</section>

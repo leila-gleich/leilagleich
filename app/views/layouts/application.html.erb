@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Leilagleich</title>
+    <title>Leila Gleich</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +9,18 @@
   </head>
 
   <body>
+    <div class="header" id="header">
+      <h1 id="header-name" class="no-decoration"><%=link_to "Leila R. Gleich", root_path%></h1>
+    </div>
+
+    <section id="menu">
+      <span id="menu-items">
+          <p class="menu-item no-decoration"><%=link_to "Home", root_path, :class=>"menu-link no-decoration"%></p>
+          <p class="menu-item no-decoration"><%=link_to "Resume", professional_experience_path, :class=>"menu-link"%></p>
+          <p class="menu-item no-decoration"><%=link_to "About Me", about_me_path, :class=>"menu-link"%></p>
+      </span>
+    </section>
+
     <%= yield %>
   </body>
 </html>
