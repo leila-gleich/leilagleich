@@ -3,17 +3,29 @@ h1#header-name a{
 }
 
 h1#header-name a:hover {
-  text-decoration: underline;
+  background-color: AliceBlue;
 }
 
-#menu-items {
-  margin-left: 70%;
+#menu {
+  margin-right:5%;
+  margin-left: 60%;
 }
-#menu p {
+
+.menu-link {
+  color: grey;
+}
+
+#menu-items p:hover {
+  background-color: AliceBlue;
+  border:none;
+}
+
+#menu-items p {
   display: inline;
   border: 1px solid black;
   padding: 5px;
   margin: 10px;
+
 }
 
 section.main {
